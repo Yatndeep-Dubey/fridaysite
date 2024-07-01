@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>Socialwyz</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav>
+      <div class="p-3 flex justify-between lg:justify-around py-5">
+        <h1 class="font-bold text-xl">LOGO</h1>
+        <!-- desktop menu -->
+        <div class="list-none flex flex-row space-x-20 items-center">
+          <li class="text-xl font-bold hidden lg:flex font-inter">
+            <a href="/">Home</a>
+          </li>
+          <li class="text-xl font-bold hidden lg:flex font-inter">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="text-xl font-bold hidden lg:flex font-inter">
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li class="text-xl font-bold hidden lg:flex font-inter">
+            <a href="#">FAQ's</a>
+          </li>
+          <a href="/job.html">
+          <div class="border-2 px-5 py-1 border-gray-800 hidden md:flex font-inter">
+            <p class="text-xl font-bold">Apply For Job</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="mb-2 lg:hidden" id="burger">
+          <div class="bg-black h-1 w-6 my-1 rounded-md" id="line1"></div>
+          <div class="bg-black h-1 w-6 my-1 rounded-md" id="line2"></div>
+          <div class="bg-black h-1 w-6 my-1 rounded-md" id="line3"></div>
+        </div>
+        <div class="hidden mt-6" id="closeburger">
+          <div
+            class="bg-black h-1 w-7 -my-2 rounded-md rotate-45"
+            id="line1"
+          ></div>
+          <div
+            class="bg-black h-1 w-7 my-1 rounded-md -rotate-45"
+            id="line3"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col space-y-10 justify-center items-center absolute w-full border-2 border-gray-800 bg-white py-5 hidden"
+        id="navlist"
+      >
+      <a href="/">
+        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800 font-inter">
+          Home
+        </button>
+      </a>
+      <a href="/about.html">
+        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800 font-inter">
+          About Us
+        </button>
+      </a>
+      <a href="/contact.html">
+        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800 font-inter">
+          Contact
+        </button>
+      </a>
+        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800 font-inter">
+          FAQ's
+        </button>
+      </div>
+    </nav>
+
+<section class="bg-[#E0FFFD]">
+    <div class="py-7">
+    <img src="public/ab-hero-traingle.svg" class="lg:-z-5 lg:ml-56 -ml-10 lg:mt-24 lg:absolute md:hidden lg:flex">
+    <img src="public/ab-her-spring.svg" class="float-right mr-36 mt-36 hidden lg:flex">
+    <p class="text-bluish font-[900] md:text-[50px] text-[40px] text-center lg:w-[50%] md:w-[80%] mx-auto z-5 p-2 ">
+        Empowering
+        Communities for a More Just and
+        <br class="lg:hidden">
+        <span
+          class="text-greenish underline decoration-[#7cd3fb] decoration-[5px]"
+          >Equitable World</span
+        >
+      </p>
+      <p class="text-center p-2 lg:w-[50%] md:w-[60%] mx-auto py-10 text-xl font-bold">Our mission at is to address complex social issues through entrepreneurial projects.</p>
+
+      <div class="flex md:justify-between  px-10 lg:hidden">
+      <img src="public/ab-hero-traingle.svg" class="-z-5 hidden md:flex lg:hidden">
+      <img src="public/ab-her-spring.svg" class="mx-36 md:mx-0">
+    </div>
+</div>
+<img src="public/ab-hero-illus3.svg" class="float-bottom mx-auto">
+</section>
+
+
+<section class="border-2 border-gray-800">
+   <div class="bg-gray-800 h-1 p-0.5 w-full"></div>
+    <img src="public/ab-sec2-edge1.svg" class="absolute -z-10 h-36 w-36 md:h-auto md:w-auto">
+    <div class="lg:mt-36 md:mt-64 mt-10">
+    <div>
+        <h1 class="text-center text-5xl font-extrabld py-10">SOCIAL ENTERPRENEURE</h1>
+    <p class="w-[80%] mx-auto text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Faucibus in ornare quam viverra orci sagittis eu. Nibh tellus molestie nunc non blandit massa enim. Ullamcorper malesuada proin libero nunc. 
+
+        Et leo duis ut diam quam nulla porttitor massa id. Dui faucibus in ornare quam viverra orci. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. In vitae turpis massa sed elementum tempus egestas sed. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Neque convallis a cras semper auctor neque. Scelerisque purus semper eget duis. Sit amet consectetur adipiscing elit pellentesque. Bibendum arcu vitae elementum curabitur vitae nunc sed velit. At imperdiet dui accumsan sit amet nulla facilisi morbi.
+        In mollis nunc sed id semper risus in. Enim tortor at auctor urna nunc. Nulla facilisi nullam vehicula ipsum a arcu cursus. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Nisi porta lorem mollis aliquam ut porttitor. Magna etiam tempor orci eu. Duis ultricies lacus sed turpis tincidunt. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Praesent semper feugiat nibh sed pulvinar proin gravida. Posuere lorem ipsum dolor sit. Nunc consequat interdum varius sit.</p>
+    
+    <p class="lg:w-[70%] w-[80%] lg:mx-[8rem] md:mx-[5rem] mx-[2rem]">
+        At imperdiet dui accumsan sit amet nulla facilisi morbi.
+        In mollis nunc sed id semper risus in. Enim tortor at auctor urna nunc. Nulla facilisi nullam vehicula ipsum a arcu cursus. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Nisi porta lorem mollis aliquam ut porttitor. Magna etiam tempor orci eu. Duis ultricies lacus sed turpis tincidunt. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Praesent semper feugiat nibh sed pulvinar proin gravida. Posuere lorem ipsum dolor sit. Nunc consequat interdum varius sit.
+    </p>
+    <p class="md:w-[70%] w-[80%] lg:mx-[8rem] md:mx-[5rem] mx-[2rem]">
+        At imperdiet dui accumsan sit amet nulla facilisi morbi.
+        In mollis nunc sed id semper risus in. Enim tortor at auctor urna nunc. Nulla facilisi nullam vehicula ipsum a arcu cursus. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Nisi porta lorem mollis aliquam ut porttitor. Magna etiam tempor orci eu. Duis ultricies lacus sed turpis tincidunt. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Praesent semper feugiat nibh sed pulvinar proin gravida. Posuere lorem ipsum dolor sit. Nunc consequat interdum varius sit.
+        At imperdiet dui accumsan sit amet nulla facilisi morbi.
+        In mollis nunc sed id semper risus in. Enim tortor at auctor urna nunc. Nulla facilisi nullam vehicula ipsum a arcu cursus. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Nisi porta lorem mollis aliquam ut porttitor. Magna etiam tempor orci eu. Duis ultricies lacus sed turpis tincidunt. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Praesent semper feugiat nibh sed pulvinar proin gravida. Posuere lorem ipsum dolor sit. Nunc consequat interdum varius sit.
+    </p>
+    </div>
+    
+    <div class="w-fit  ml-[80%] ">
+        <img src="public/ab-sec2-edge2.svg" class="h-auto w-auto">
+    </div>
+    </div> 
+    
+   
+</section>
+
+
+<!-- Our Founder -->
+<section class="bg-[#FECE01] ">
+    <img src="public/founder-scetion-illus1.svg" class="float-left -z-10">
+    <img src="public/founder-saturn.svg" class="-z-10 lg:ml-[40rem] h-44 w-44 lg:ml-[20rem] md:ml-[30rem] block ">
+    <div class="flex lg:flex-row flex-col  lg:space-x-20 lg:p-10 lg:w-[80%] justify-center items-center  md:-mt-24 md:py-0 pb-36  lg:mr-0  md:py-10 w-full">
+        <div>
+        <img src="public/founder-img.svg">
+        </div>
+        <div class="w-[90%] px-10 md:space-y-5 md:mt-2 mx-auto flex flex-col items-center lg:items-start ">
+          <h1 class="font-[900] text-2xl ">Founder Name</h1>
+          <p class=" text-justify text-xl font-[900]">"Raising our consciousness as a society is not a solitary journey, it is a collective effort towards creating a better world for all. Let us join forces and strive towards a brighter future, together "</p>
+          <button
+              class="bg-greenish font-bold w-fit mx-auto lg:mx-0 px-10 py-3 text-xl text-white border border-black rounded shadow-[5px_5px_#000000] lg:px-20"
+            >
+              Meet the Founder
+            </button>
+        </div>
+    </div>
+    <img src="public/founder-section-illus2.svg" class="float-right -mt-[11.1rem] ">
+  </section>
+
+  
+  <section >
+    <div class="flex justify-between">
+      <img
+        src="/public/check.svg"
+        alt="check illustration"
+        class="w-1/2 lg:hidden"
+      />
+      <img
+        src="/public/check-yellow.svg"
+        alt="check illustration"
+        class="w-1/2 hidden w-[415px] h-[475px] -ml-7 lg:block"
+      />
+      <img
+        src="/public/chakra.svg"
+        alt="chakra illustration"
+        class="w-1/4 -mt-44 md:h-[178px] md:w-fit md:-mt-0 lg:h-[314px] lg:mt-10"
+      />
+    </div>
+    <div
+      class="-mt-44 text-center p-10 space-y-5 md:-mt-96 md:max-w-[447px] md:mx-auto lg:-mt-[450px] lg:w-[659px] lg:flex lg:flex-col items-center"
+    >
+      <p class="font-space text-4xl font-bold md:text-[60px]">Our Impact</p>
+      <p class="text-[14px] md:text-[20px] lg:w-[659px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="flex justify-end -mt-7 lg:mr-10 lg:mt-10">
+      <img
+        src="public/ring.svg"
+        alt="ring illustration"
+        class="h-16 relative md:h-[136px] z-50"
+      />
+    </div>
+
+    <div
+      class="-mt-6 flex flex-col items-center justify-center md:grid grid-cols-2 md:w-[638px] md:mx-auto md:-mt-14 lg:grid-cols-3 lg:w-[1110px] relative bg-white lg:-mt-16"
+    >
+      <div
+        class="w-[319px] h-[332px] border border-black rounded-[0px_0px_24px_24px] flex flex-col items-center justify-between p-7 text-center md:h-[373px] md:rounded-[0px_0px_24px_0px] lg:w-[370px]"
+      >
+        <img src="public/i1.svg" alt="impact one title" />
+        <p class="font-space-mono text-[23px] font-[700]">Impact one title</p>
+        <p class="text-[14px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div
+        class="w-[319px] h-[332px] border border-black rounded-[24px] flex flex-col items-center justify-between p-7 text-center md:h-[373px] md:rounded-[0px_0px_0px_24px] lg:rounded-[0px_0px_24px_24px] lg:w-[370px]"
+      >
+        <img src="public/i2.svg" alt="impact one title" />
+        <p class="font-space-mono text-[23px] font-[700]">Impact one title</p>
+        <p class="text-[14px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div
+        class="w-[319px] h-[332px] border border-black rounded-[24px] flex flex-col items-center justify-between p-7 text-center md:h-[373px] md:rounded-[0px_24px_24px_0px] lg:rounded-[0px_0px_0px_24px] lg:w-[370px]"
+      >
+        <img src="public/i3.svg" alt="impact one title" />
+        <p class="font-space-mono text-[23px] font-[700]">Impact one title</p>
+        <p class="text-[14px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div
+        class="w-[319px] h-[332px] border border-black rounded-[24px] flex flex-col items-center justify-between p-7 text-center md:h-[373px] md:rounded-[24px_0px_0px_24px] lg:rounded-[0px_24px_0px_0px] lg:w-[370px]"
+      >
+        <img src="public/i4.svg" alt="impact one title" />
+        <p class="font-space-mono text-[23px] font-[700]">Impact one title</p>
+        <p class="text-[14px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div
+        class="w-[319px] h-[332px] border border-black rounded-[24px] flex flex-col items-center justify-between p-7 text-center md:h-[373px] md:rounded-[0px_24px_24px_0px] lg:rounded-[24px_24px_0px_0px] lg:w-[370px]"
+      >
+        <img src="public/i5.svg" alt="impact one title" />
+        <p class="font-space-mono text-[23px] font-[700]">Impact one title</p>
+        <p class="text-[14px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+
+      <div
+        class="w-[319px] h-[332px] bg-white relative border border-black rounded-[24px] flex flex-col items-center justify-between p-7 text-center md:h-[373px] md:rounded-[24px_0px_0px_24px] lg:rounded-[24px_0px_0px_0px] lg:w-[370px]"
+      >
+        <img src="public/i6.svg" alt="impact one title" />
+        <p class="font-space-mono text-[23px] font-[700]">Impact one title</p>
+        <p class="text-[14px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex justify-end -mt-44 md:-mt-52 lg:-mt-60">
+      <img src="public/check-stairs.svg" alt="stairs pattern" />
+    </div>
+  </section>
+
+
+  <section>
+    <h1 class="text-center font-extrabold text-5xl">Featured On</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi?</p>
+ <div class="container my-10" >
+   <section class="customer-logos slider">
+     <!-- Card Start -->
+     <div class="slide">
+       <div
+         class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+       >
+         <div
+           class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+         >
+           <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+         </div>
+
+         <div class="w-[116px] h-[40px]">
+           <p class="text-[13px] font-bold">Zapier</p>
+           <p class="text-[8px]">
+             [app details here] lorem ipsum is a placeholder text
+           </p>
+         </div>
+       </div>
+     </div>
+     <!-- Card Ends -->
+
+           <!-- Card Start -->
+           <div class="slide">
+             <div
+               class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+             >
+               <div
+                 class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+               >
+                 <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+               </div>
+     
+               <div class="w-[116px] h-[40px]">
+                 <p class="text-[13px] font-bold">Zapier</p>
+                 <p class="text-[8px]">
+                   [app details here] lorem ipsum is a placeholder text
+                 </p>
+               </div>
+             </div>
+           </div>
+           <!-- Card Ends -->
+
+                 <!-- Card Start -->
+     <div class="slide">
+       <div
+         class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+       >
+         <div
+           class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+         >
+           <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+         </div>
+
+         <div class="w-[116px] h-[40px]">
+           <p class="text-[13px] font-bold">Zapier</p>
+           <p class="text-[8px]">
+             [app details here] lorem ipsum is a placeholder text
+           </p>
+         </div>
+       </div>
+     </div>
+     <!-- Card Ends -->
+
+           <!-- Card Start -->
+           <div class="slide">
+             <div
+               class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+             >
+               <div
+                 class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+               >
+                 <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+               </div>
+     
+               <div class="w-[116px] h-[40px]">
+                 <p class="text-[13px] font-bold">Zapier</p>
+                 <p class="text-[8px]">
+                   [app details here] lorem ipsum is a placeholder text
+                 </p>
+               </div>
+             </div>
+           </div>
+           <!-- Card Ends -->
+
+                 <!-- Card Start -->
+     <div class="slide">
+       <div
+         class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+       >
+         <div
+           class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+         >
+           <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+         </div>
+
+         <div class="w-[116px] h-[40px]">
+           <p class="text-[13px] font-bold">Zapier</p>
+           <p class="text-[8px]">
+             [app details here] lorem ipsum is a placeholder text
+           </p>
+         </div>
+       </div>
+     </div>
+     <!-- Card Ends -->
+
+           <!-- Card Start -->
+           <div class="slide">
+             <div
+               class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+             >
+               <div
+                 class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+               >
+                 <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+               </div>
+     
+               <div class="w-[116px] h-[40px]">
+                 <p class="text-[13px] font-bold">Zapier</p>
+                 <p class="text-[8px]">
+                   [app details here] lorem ipsum is a placeholder text
+                 </p>
+               </div>
+             </div>
+           </div>
+           <!-- Card Ends -->
+
+                 <!-- Card Start -->
+     <div class="slide">
+       <div
+         class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+       >
+         <div
+           class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+         >
+           <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+         </div>
+
+         <div class="w-[116px] h-[40px]">
+           <p class="text-[13px] font-bold">Zapier</p>
+           <p class="text-[8px]">
+             [app details here] lorem ipsum is a placeholder text
+           </p>
+         </div>
+       </div>
+     </div>
+     <!-- Card Ends -->
+   </section>
+ </div>
+
+
+ <!-- Next row -->
+
+
+ <div class="container my-10">
+   <section class="customer-logos2 slider ">
+     <!-- Card Start -->
+     <div class="slide">
+       <div
+         class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800 "
+       >
+         <div
+           class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+         >
+           <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+         </div>
+
+         <div class="w-[116px] h-[40px]">
+           <p class="text-[13px] font-bold">Zapier</p>
+           <p class="text-[8px]">
+             [app details here] lorem ipsum is a placeholder text
+           </p>
+         </div>
+       </div>
+     </div>
+     <!-- Card Ends -->
+
+           <!-- Card Start -->
+           <div class="slide">
+             <div
+               class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+             >
+               <div
+                 class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+               >
+                 <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+               </div>
+     
+               <div class="w-[116px] h-[40px]">
+                 <p class="text-[13px] font-bold">Zapier</p>
+                 <p class="text-[8px]">
+                   [app details here] lorem ipsum is a placeholder text
+                 </p>
+               </div>
+             </div>
+           </div>
+           <!-- Card Ends -->
+
+                 <!-- Card Start -->
+     <div class="slide">
+       <div
+         class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+       >
+         <div
+           class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+         >
+           <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+         </div>
+
+         <div class="w-[116px] h-[40px]">
+           <p class="text-[13px] font-bold">Zapier</p>
+           <p class="text-[8px]">
+             [app details here] lorem ipsum is a placeholder text
+           </p>
+         </div>
+       </div>
+     </div>
+     <!-- Card Ends -->
+
+           <!-- Card Start -->
+           <div class="slide">
+             <div
+               class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+             >
+               <div
+                 class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+               >
+                 <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+               </div>
+     
+               <div class="w-[116px] h-[40px]">
+                 <p class="text-[13px] font-bold">Zapier</p>
+                 <p class="text-[8px]">
+                   [app details here] lorem ipsum is a placeholder text
+                 </p>
+               </div>
+             </div>
+           </div>
+           <!-- Card Ends -->
+
+                 <!-- Card Start -->
+     <div class="slide">
+       <div
+         class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+       >
+         <div
+           class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+         >
+           <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+         </div>
+
+         <div class="w-[116px] h-[40px]">
+           <p class="text-[13px] font-bold">Zapier</p>
+           <p class="text-[8px]">
+             [app details here] lorem ipsum is a placeholder text
+           </p>
+         </div>
+       </div>
+     </div>
+     <!-- Card Ends -->
+
+           <!-- Card Start -->
+           <div class="slide">
+             <div
+               class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+             >
+               <div
+                 class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+               >
+                 <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+               </div>
+     
+               <div class="w-[116px] h-[40px]">
+                 <p class="text-[13px] font-bold">Zapier</p>
+                 <p class="text-[8px]">
+                   [app details here] lorem ipsum is a placeholder text
+                 </p>
+               </div>
+             </div>
+           </div>
+           <!-- Card Ends -->
+
+                 <!-- Card Start -->
+     <div class="slide">
+       <div
+         class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
+       >
+         <div
+           class="bg-[#f3f4f6] w-[46px] h-[46px] flex justify-center items-center rounded border border-black"
+         >
+           <img src="public/job-figma.svg" class="h-[30px] w-fit" />
+         </div>
+
+         <div class="w-[116px] h-[40px]">
+           <p class="text-[13px] font-bold">Zapier</p>
+           <p class="text-[8px]">
+             [app details here] lorem ipsum is a placeholder text
+           </p>
+         </div>
+       </div>
+     </div>
+     <!-- Card Ends -->
+   </section>
+ </div>
+
+ 
+</section>
+
+
+
+    <!-- Footer se upar vala section -->
+    <section class="bg-[#FECE01] lg:w-[80%] mx-auto flex md:flex-row  flex-col-reverse text-center md:text-justify justify-between lg:h-72 items-center md:px-20 mt-24  ">
+        <div class="lg:space-y-5 space-y-5 my-5">
+            <h1 class="font-extrabold text-5xl ">It`s time to get a great day.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia rerum doloribus vitae? Magni delectus sint</p>
+            <button
+            class="bg-greenish font-bold w-fit mx-auto  lg:mx-0 px-10 py-3 text-xl text-white border border-black rounded shadow-[5px_5px_#000000] md:px-20"
+          >
+            Get the App
+          </button>
+        </div>
+        <div>
+          <img src="public/mobile-pic.svg" class="lg:mb-[7rem] mt-10 ">
+        </div>
+      </section>
+  
+      <footer>
+        <section class="flex flex-row items-center justify-center my-10">
+          <div class="border-2 border-gray-800 w-[90%] bg-[#F2F5F1] ">
+              <img src="public/footer-upper-illus.svg" class="lg:float-right lg:flex hidden">
+              <!-- Under Div -->
+              <div class="md:p-20 p-5 flex lg:flex-row flex-col-reverse md:flex-row  lg:justify-around  md:space-x-24  text-center md:text-justify">
+                <!-- first col -->
+                <div class="space-y-10">
+                    <div>
+                    <h1 class="font-extrabold text-xl">Your Class</h1>
+                    <p>Lorem ipsum dolor, <br> amet consectetur adipisicing elit.</p>
+                   </div>
+                    <button  class="bg-[#FECE01] font-bold w-fit   mx-auto lg:mx-0 px-5 py-3 text-xl text-black border border-black rounded shadow-[5px_5px_#000000] ">
+                    Book<span class="text-[#FECE01]">_</span>A<span class="text-[#FECE01]">_</span>Meeting
+                   </button>
+                    <div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p class="font-extrabold text-xl">your@gmail.com</p>
+                   </div>
+               </div>
+                 <!-- first col ends -->
+                <div class="flex lg:flex-row md:flex-col flex-col  lg:space-x-24   space-y-10 lg:space-y-0 items-center">
+                        <div class="flex flex-row  space-x-24">
+                                <div class="space-y-7">
+                                  <h1 class="font-extrabold text-2xl">Pages</h1>
+                                  <p>Career</p>
+                                  <p>About</p>
+                                  <p>FAQ</p>
+                                  <p>Contact</p>
+                                </div>
+                                <div class="space-y-7">
+                                  <h1 class="font-extrabold text-2xl">Pages</h1>
+                                  <p>Career</p>
+                                  <p>About</p>
+                                  <p>FAQ</p>
+                                  <p>Contact</p>
+                                </div>
+                        </div>
+                        <div class="flex flex-col justify-center space-y-2 ">
+                                <h1 class="font-extrabold text-xl">Stay Updated</h1>
+                                <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing </p>
+                                <div class="-space-x-1 flex flex-row items-center">
+                                  <input type="text" class="py-2 outline-none shadow-[0px_2px_#000000] rounded-md w-[90%]">
+                                  <button class="bg-black text-white px-5 py-2.5 rounded-sm">SignUp</button>
+                                </div>
+                          
+                        </div>
+              </div>
+  
+  
+        </div>
+             
+        <img src="public/footer-upper-illus.svg" class="lg:float-right md:-mt-36 lg:hidden">
+          </div>
+        </section>
+      </footer>
+      <section>
+        <div class="flex flex-row justify-between w-[90%] mx-auto">
+          <h1>LOGO</h1>
+          <div class="flex flex-row space-x-5">
+            <img src="public/fb-logo.svg">
+            <img src="public/linkedinlogo.svg">
+            <img src="public/instalogo.svg">
+            <img src="public/twitter-logo.svg">
+          </div>
+        </div>
+        <div class="bg-black h-0.5 py-0.1 my-5 w-[90%] mx-auto"></div>
+        <div class="flex md:flex-row flex-col md:justify-between w-[90%] mx-auto my-5 items-center">
+          <p> &copy;  Copyright 2023 All Rights Reserved</p>
+          <p>Developed By ELV DRIVE</p>
+        </div>
+      </section>
+
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <!-- script -->
+    <script src="script.js"> </script>
+</html>

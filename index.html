@@ -9,7 +9,7 @@
     <title>Socialwyz</title>
 
     <!-- style -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
@@ -21,285 +21,40 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;800&display=swap"
       rel="stylesheet"
     />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
-    <!-- style tag -->
-    <style>
-      * {
-        font-family: "Poppins", sans-serif;
-      }
-
-      /* root */
-      :root {
-        --bluish: #004e64;
-        --blue-light: #d7f7ff;
-        --blue-dark: #2e10e5;
-        --greenish: #00ad13;
-        --green-light: #d1fadf;
-        --green-mid: #43ff78;
-        --green-dark: #4bff7e;
-        --yellowish: #ffd41d;
-        --purplish: #db00ff;
-        --purple-dark: #8f00ff;
-      }
-
-      /* colors */
-      .text-bluish {
-        color: var(--bluish);
-      }
-      .text-blue-dark {
-        color: var(--blue-dark);
-      }
-      .text-greenish {
-        color: var(--greenish);
-      }
-      .text-purplish {
-        color: var(--purplish);
-      }
-      .text-purple-dark {
-        color: var(--purple-dark);
-      }
-
-      /* bg colors */
-      .bg-greenish {
-        background-color: var(--greenish);
-      }
-      .bg-green-light {
-        background-color: var(--green-light);
-      }
-      .bg-green-mid {
-        background-color: var(--green-mid);
-      }
-      .bg-green-dark {
-        background-color: var(--green-dark);
-      }
-      .bg-yellowish {
-        background-color: var(--yellowish);
-      }
-      .bg-blue-light {
-        background-color: var(--blue-light);
-      }
-      .bg-blog{
-    background-image: url("public/blog-bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
-   .pm{
-      box-shadow: 3px 3px ;
-   }
-   .btn-blog{
-      box-shadow: 3px 3px black;
-      color: white;
-   }
-   
-
-.tab-bg-blog{
-  background-image: url("public/tab-bg-blog.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (max-width: 1024px)  
-   {
-   .bg-blog{
-    display: none;
-   }
-   }
-
-   @media (min-width: 1024px)  
-   {
-   .tab-bg-blog{
-    display: none;
-   }
-   }
-   
-@media (max-width: 767px) 
-{
-.tab-bg-blog{
-  display: none;
-}
-}
-
-@media (min-width: 767px)  
-{
-.mob-bg-blog{
- display: none;
-}
-}
-      /* fonts */
-      .font-space {
-        font-family: "Space Grotesk", sans-serif;
-        font-size: 70px;
-        font-weight:bolder;
-        line-height: 70px;
-      }
-      .bg-job
-      {
-        background: url('public/job-vacancies-bg.svg');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 1800px;
-        z-index: -10;
-      }
-
-      /* media queries */
-      @media screen and (max-width: 480px) {
-        .font-space {
-          font-family: "Space Grotesk", sans-serif;
-          font-size: 40px;
-          font-weight: 700;
-          line-height: 70px;
-        }
-      }
-      .bg-hero{
-        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 131, 235, 0.44) 3.61%, rgba(255, 251, 220, 0) 100%);
-        background-blend-mode: multiply;
-      }
-     
-      /* Slider */
-.slick-slide {
-    margin: 0px 20px;
-}
-
-.slick-slide img {
-    width: 100%;
-}
-
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
-    </style>
   </head>
   <body>
     <!-- navbar -->
 
     <nav>
-      <div class="p-3 flex justify-between lg:justify-around py-5">
+      <div class="p-3 flex justify-between lg:justify-between py-5 lg:px-10">
         <h1 class="font-bold text-xl">LOGO</h1>
         <!-- desktop menu -->
-        <div class="list-none flex flex-row space-x-20 items-center">
-          <li class="text-xl font-bold hidden lg:flex">
-            <a href="#">Home</a>
+        <div class="list-none flex flex-row space-x-14 items-center ">
+          <li class="text-xl font-bold hidden lg:flex font-inter">
+            <a href="/">Home</a>
           </li>
-          <li class="text-xl font-bold hidden lg:flex">
-            <a href="#">About</a>
+          <li class="text-xl font-bold hidden lg:flex font-inter">
+            <a href="/about.html">About</a>
           </li>
-          <li class="text-xl font-bold hidden lg:flex">
-            <a href="#">Contact</a>
+          <li class="text-xl font-bold hidden lg:flex font-inter">
+            <a href="/contact.html">Contact</a>
           </li>
-          <li class="text-xl font-bold hidden lg:flex">
+          <li class="text-xl font-bold hidden lg:flex font-inter">
             <a href="#">FAQ's</a>
           </li>
-          <div class="border-2 px-5 py-1 border-gray-800 hidden md:flex">
+          <a href="/job.html">
+          <div class="border-2 px-5 py-1 border-gray-800 hidden md:flex font-inter">
             <p class="text-xl font-bold">Apply For Job</p>
           </div>
+        </a>
         </div>
 
         <div class="mb-2 lg:hidden" id="burger">
@@ -322,16 +77,22 @@
         class="flex flex-col space-y-10 justify-center items-center absolute w-full border-2 border-gray-800 bg-white py-5 hidden"
         id="navlist"
       >
-        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800">
+      <a href="/">
+        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800 font-inter">
           Home
         </button>
-        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800">
+      </a>
+      <a href="/about.html">
+        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800 font-inter">
           About Us
         </button>
-        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800">
+      </a>
+      <a href="/contact.html">
+        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800 font-inter">
           Contact
         </button>
-        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800">
+      </a>
+        <button class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800 font-inter">
           FAQ's
         </button>
       </div>
@@ -343,10 +104,11 @@
       class="absolute -z-10 hidden md:flex md:top-[600px] lg:top-24"
     />
     <section
-      class="p-5 flex flex-col gap-10 lg:gap-0 my-10 lg:flex-row mt-20 md:my-20 md:space-y-20 space-y-0"
+      class="px-5 flex flex-col gap-10 lg:gap-0  lg:flex-row  md:my-20 md:space-y-20 lg:space-y-0  -pb-24 lg:mt-24 lg:my-0"
     >
-      <div class="flex flex-col space-y-10 lg:ml-36">
-        <p class="text-bluish font-[900] text-[50px] text-center lg:text-justify">
+     
+      <div class="flex flex-col space-y-10 lg:ml-36 ">
+        <p class="text-bluish font-[900] text-[50px] text-center lg:text-justify font-space">
           Empowering <br />
           Communities for a <br class="md:flex hidden" />More Just and
           <span
@@ -365,13 +127,17 @@
           Join the tribe
         </button>
       </div>
-      <div class="mx-auto lg:w-[400px] h-[400px] bg-hero">
-        <img src="/public/hero-img.svg" alt="people img" />
+      <div class="mx-auto lg:w-[500px] h-auto ">
+        <div class="circle bg-[#FF83EB] h-[500px] w-[500px] right-5 lg:top-10 blur-xl lg:bg-opacity-20  bg-opacity-[0.1]  "></div> 
+        <img src="public/hero-img.svg" alt="people img" class="w-full" />
       </div>
+      <div class="circle bg-yellow-300 h-[500px] md:w-[500px] lg:-top-36 -left-24 blur-xl lg:bg-opacity-20  bg-opacity-[0.1] top-96 w-[300px] "></div>
+    <div class="circle bg-[#C6A3FF] h-[500px] w-[500px] left-[30%] lg:top-96 blur-xl bg-opacity-[0.3] hidden lg:block" ></div>
+   
     </section>
 
      <!-- join the tribe section -->
-     <section class="bg-green-light border border-black pb-16 md:h-[716px]">
+     <section class=" border border-black pb-16 md:h-fit section-2-bg">
       <img
         src="public/star.svg"
         alt="star illustration"
@@ -391,10 +157,10 @@
       <div
         class="hidden h-[63.68px] w-fit -mt-28 ml-[283.47px] md:block lg:hidden"
       >
-        <img src="public/bright-star.svg" alt="bright star illustration" />
+        <img src="public/bright-star.svg" alt="bright star illustration"  />
       </div>
       <div
-        class="w-[342px] h-[339px] -mt-28 bg-blue-light border border-black rounded-[24px] shadow-[7px_7px_#000000] mx-auto md:w-[629px] md:h-[414px] md:mt-5 lg:w-[720px] lg:h-[385px] lg:-mt-24"
+        class="w-[342px] h-fit -mt-28 bg-blue-light border border-black rounded-[24px] shadow-[7px_7px_#000000] mx-auto md:w-[629px] md:h-[20rem] md:mt-5 lg:w-[720px] lg:h-[25rem] lg:-mt-24"
       >
         <div class="space-y-7 md:p-5 lg:w-[625px] lg:mx-auto lg:py-[52px]">
           <p
@@ -402,7 +168,7 @@
           >
             A Holistic Approach to Creating Lasting Impact
           </p>
-          <p class="font-space-mono text-center text-[14px] md:text-[20px]">
+          <p class="font-space-mono text-center text-[14px] md:text-[20px] ">
             We believe to address complex social issues through a multi-faceted
             approach that combines the strengths of public-private partnerships,
             cutting-edge technology, a focus on first principles, and effective
@@ -413,13 +179,13 @@
         <img
           src="public/bright-star.svg"
           alt="star illustration"
-          class="mt-[80px] md:hidden"
+          class="lg:mt-[80px] md:hidden"
         />
 
         <img
           src="public/star.svg"
           alt="star illustration"
-          class="hidden -ml-44 h-[269.63px] w-fit md:block lg:h-[426.61px] lg:-ml-96 xl:-ml-[550px] lg:relative lg:z-[92] lg:-mt-16"
+          class="hidden -ml-44 h-[269.63px]  w-fit md:block lg:h-[426.61px] lg:-ml-96 xl:-ml-[550px] lg:relative lg:z-[92] lg:-mt-16"
         />
       </div>
 
@@ -429,7 +195,7 @@
         <img
           src="public/bright-star.svg"
           alt="bright star illustration"
-          class="h-[130px]"
+          class="h-[130px] "
         />
       </div>
 
@@ -458,7 +224,7 @@
        at a Time.
      </p>
      <img
-       src="/public/blossom.svg"
+       src="public/blossom.svg"
        alt="blossom illustration"
        class="-mt-28 h-16 w-fit ml-72 md:-mt-64 md:h-[90px] md:ml-[631px] lg:ml-[1080px] lg:h-[128px]"
      />
@@ -471,14 +237,16 @@
 
      <!-- cards -->
      <div
-       class="flex flex-col gap-10 p-5 items-center relative md:flex-row md:justify-center"
+       id="card-scroller"
+       class="flex flex-col gap-10 p-5 items-center relative md:flex-row md:justify-start md:overflow-x-auto scroll-smooth md:px-10 no-scrollbar md:mx-auto md:w-full lg:w-fit "
      >
        <!-- card 1 -->
        <div
-         class="flex flex-col gap-5 bg-white w-[20.25rem] rounded-xl border border-black shadow-[7px_7px_#000000] p-5 text-center md:h-[486px] md:w-[298px]"
+       id="card-1"
+         class="flex flex-col  flex-shrink-0 gap-5 bg-white w-[20.25rem] rounded-xl border border-black shadow-[7px_7px_#000000] p-5 text-center md:h-[486px] md:w-[298px]"
        >
          <img
-           src="/public/doctor.svg"
+           src="public/doctor.svg"
            alt="doctor"
            class="rounded-xl border border-black md:h-[215px]"
          />
@@ -498,10 +266,11 @@
 
        <!-- card 2 -->
        <div
-         class="flex flex-col gap-5 bg-white w-[20.25rem] rounded-xl border border-black shadow-[7px_7px_#000000] p-5 text-center md:h-[486px] md:w-[298px]"
+         id="card-2"
+         class="flex flex-col gap-5 flex-shrink-0 bg-white w-[20.25rem] rounded-xl border border-black shadow-[7px_7px_#000000] p-5 text-center md:h-[486px] md:w-[298px]"
        >
          <img
-           src="/public/mobile.png"
+           src="public/mobile.png"
            alt="mobile"
            class="rounded-xl border border-black md:h-[215px]"
          />
@@ -513,7 +282,7 @@
          </p>
 
          <button
-           class="bg-greenish rounded w-full py-2 text-white font-bold text-xl shadow-[2px_2px_#000000] border border-black"
+           class="bg-greenish flex-shrink-0 rounded w-full py-2 text-white font-bold text-xl shadow-[2px_2px_#000000] border border-black"
          >
            Get the App
          </button>
@@ -521,10 +290,11 @@
 
        <!-- card 3 -->
        <div
-         class="flex flex-col gap-5 bg-white w-[20.25rem] rounded-xl border border-black shadow-[7px_7px_#000000] p-5 text-center md:h-[486px] md:w-[298px]"
+       id="card-3"
+         class="flex flex-col gap-5  flex-shrink-0 bg-white w-[20.25rem] rounded-xl border border-black shadow-[7px_7px_#000000] p-5 text-center md:h-[486px] md:w-[298px]"
        >
          <img
-           src="/public/app-preview.svg"
+           src="public/app-preview.svg"
            alt="app preview"
            class="rounded-xl border border-black md:h-[215px]"
          />
@@ -548,10 +318,16 @@
      <!-- pattern illustration -->
      <div class="w-full flex justify-end -mt-36 md:-mt-80 lg:-mt-[500px]">
        <img
-         src="/public/card-pattern.svg"
+         src="public/card-pattern.svg"
          alt="pattern illustration"
          class="h-56 w-fit md:h-[400px] lg:h-[500px]"
        />
+     </div>
+     <div class="flex flex-row space-x-2 justify-center md:-mt-24 ">
+      <a href="#card-1"><p id="btn-1">0</p></a>
+      <a href="#card-2"><p id="btn-1">0</p></a>
+      <a href="#card-3"><p id="btn-1">0</p></a>
+     
      </div>
    </section>
 
@@ -566,7 +342,7 @@
       <p class="font-space text-4xl font-bold text-center md:text-[60px]">
         Our <span class="font-space text-purple-dark">Guiding Beliefs</span>
       </p>
-      <p class="text-center md:text-[20px] lg:max-w-[585px] lg:mx-auto">
+      <p class="text-center md:text-[20px] lg:max-w-[585px] lg:mx-auto font-[400]">
         These beliefs are at the heart of everything we do and guide us
         towards creating lasting change in the world.
       </p>
@@ -575,42 +351,54 @@
     <!-- slider section -->
     <div class="bg-white p-7 flex gap-10 overflow-x-scroll md:hidden">
       <div
-        class="flex h-[3.875rem] text-sm bg-green-mid justify-center items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
+      id="btn20"
+      onclick="activateButton(20)"
+        class="flex h-[3.875rem] text-sm hover:bg-green-mid justify-center items-center p-5 rounded  border border-black "
       >
         <p>Empowerment and Innovation</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex h-[3.875rem] text-sm justify-center items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
+      id="btn21"
+      onclick="activateButton(21)"
+        class="flex h-[3.875rem] text-sm justify-center hover:bg-green-mid items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
       >
         <p>Sustainability and Responsibility</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex h-[3.875rem] text-sm justify-center items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
+      id="btn22"
+      onclick="activateButton(22)"
+        class="flex h-[3.875rem] text-sm justify-center hover:bg-green-mid items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
       >
         <p>Consciousness and Progress</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex h-[3.875rem] text-sm justify-center items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
+      id="btn23"
+      onclick="activateButton(23)"
+        class="flex h-[3.875rem] text-sm justify-center  hover:bg-green-mid items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
       >
         <p>Community and Inclusivity</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex h-[3.875rem] text-xs justify-center items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
+      id="btn24"
+      onclick="activateButton(24)"
+        class="flex h-[3.875rem] text-xs justify-center hover:bg-green-mid items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
       >
         <p>Holistic Approach and Justice</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex h-[3.875rem] text-sm justify-center items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
+      id="btn25"
+      onclick="activateButton(25)"
+        class="flex h-[3.875rem] text-sm justify-center items-center p-5  hover:bg-green-mid rounded shadow-[2px_2px_#000000] border border-black"
       >
         <p>Purpose and Citizenship</p>
         <p>&gt;</p>
@@ -622,42 +410,54 @@
       class="hidden mx-[20px] border bg-white border-black p-[23px] gap-[12px] grid-cols-3 justify-center items-center md:grid lg:hidden"
     >
       <div
-        class="flex w-[219px] h-[62px] gap-[10px] bg-green-mid justify-center items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
+            id="btn7"
+            onclick="activateButton(7)"
+        class="flex w-[219px] h-[62px] gap-[10px]  justify-center hover:bg-green-mid items-center p-5 rounded  border border-black"
       >
         <p>Empowerment and Innovation</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black"
+      id="btn8"
+      onclick="activateButton(8)"
+        class="flex w-[219px] h-[62px] gap-[10px]  justify-center hover:bg-green-mid items-center p-5 rounded border border-black clicks"
       >
         <p>Sustainability and Responsibility</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black"
+      id="btn9"
+      onclick="activateButton(9)"
+        class="flex w-[219px] h-[62px] gap-[10px] justify-center hover:bg-green-mid items-center p-5 rounded border border-black"
       >
         <p>Consciousness and Progress</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black"
+      id="btn10"
+      onclick="activateButton(10)"
+        class="flex w-[219px] h-[62px] gap-[10px] justify-center hover:bg-green-mid items-center p-5 rounded border border-black"
       >
         <p>Community and Inclusivity</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black"
+      id="btn11"
+      onclick="activateButton(11)"
+        class="flex w-[219px] h-[62px] gap-[10px] justify-center hover:bg-green-mid items-center p-5 rounded border border-black"
       >
         <p>Holistic Approach and Justice</p>
         <p>&gt;</p>
       </div>
 
       <div
-        class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black"
+      id="btn12"
+      onclick="activateButton(12)"
+        class="flex w-[219px] h-[62px] gap-[10px] justify-center hover:bg-green-mid items-center p-5 rounded border border-black"
       >
         <p>Purpose and Citizenship</p>
         <p>&gt;</p>
@@ -716,48 +516,62 @@
         class="hidden w-[299px] h-[697px] border bg-white border-black p-[30px] flex-col items-center gap-[12px] lg:flex"
       >
         <div class="flex flex-col justify-center">
-          <p class="text-[27px]">Lorem Impsum</p>
+          <p class="text-[27px] font-bold">Lorem Impsum</p>
           <p>Join us in our journey to create a better future for all.</p>
         </div>
 
         <div class="space-y-[30px]">
+          
           <div
-            class="flex w-[219px] h-[62px] gap-[10px] hover:bg-green-400  justify-center items-center p-5 rounded shadow-[2px_2px_#000000] border border-black"
+            id="btn1"
+            onclick="activateButton(1)"
+            class="flex w-[219px] h-[62px] gap-[10px] hover:bg-green-mid  clicks justify-center items-center p-5 rounded  border border-black cursor-pointer"
           >
             <p>Empowerment and Innovation</p>
             <p>&gt;</p>
           </div>
+      
 
           <div
-            class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black hover:bg-green-400"
+            id="btn2"
+            onclick="activateButton(2)"
+            class="flex w-[219px] h-[62px] gap-[10px] justify-center hover:bg-green-mid  items-center p-5 rounded border border-black cursor-pointer"
           >
             <p>Sustainability and Responsibility</p>
             <p>&gt;</p>
           </div>
 
           <div
-            class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black hover:bg-green-400"
+            id="btn3"
+            onclick="activateButton(3)"
+            class="flex w-[219px] h-[62px] gap-[10px] justify-center hover:bg-green-mid  items-center p-5 rounded border border-black cursor-pointer"
           >
             <p>Consciousness and Progress</p>
             <p>&gt;</p>
           </div>
 
           <div
-            class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black hover:bg-green-400"
+            id="btn4"
+            onclick="activateButton(4)"
+            class="flex w-[219px] h-[62px] gap-[10px] justify-center hover:bg-green-mid  items-center p-5 rounded border border-black cursor-pointer"
           >
             <p>Community and Inclusivity</p>
             <p>&gt;</p>
           </div>
 
           <div
-            class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black hover:bg-green-400"
+          id="btn5"
+          onclick="activateButton(5)"
+            class="flex w-[219px] h-[62px] gap-[10px] justify-center hover:bg-green-mid  items-center p-5 rounded border border-black cursor-pointer"
           >
             <p>Holistic Approach and Justice</p>
             <p>&gt;</p>
           </div>
 
           <div
-            class="flex w-[219px] h-[62px] gap-[10px] justify-center items-center p-5 rounded border border-black hover:bg-green-400"
+            id="btn6"
+            onclick="activateButton(6)"
+            class="flex w-[219px] h-[62px] gap-[10px] justify-center  hover:bg-green-mid  items-center p-5 rounded border border-black cursor-pointer"
           >
             <p>Purpose and Citizenship</p>
             <p>&gt;</p>
@@ -820,7 +634,7 @@
 
   <section class="bg-green-dark relative">
     <img
-      src="/public/yellow-triangle.svg"
+      src="public/yellow-triangle.svg"
       alt="triangle pattern"
       class="-mt-[50%] relative z-[96] md:-mt-[22.80%] lg:-mt-[14.70%] xl:-mt-[12.35%]"
     />
@@ -830,7 +644,7 @@
     >
       <div class="space-y-5 ">
         <p
-          class="-mt-[40%] font-space text-4xl font-bold text-center mx-10 md:-mt-32 md:text-[60px] md:leading-[60px]  md:mx-auto lg:text-left "
+          class="-mt-[40%] font-space text-4xl font-extrabold text-center mx-10 md:-mt-32 md:text-[60px] md:leading-[60px]  md:mx-auto lg:text-left "
         >
           Be the
           <span class="font-space text-blue-dark">Change You Want</span> to
@@ -854,7 +668,7 @@
       </div>
 
       <img
-        src="/public/chat.svg"
+        src="public/chat.svg"
         alt="chat illustration"
         class="md:mx-auto lg:h-[565px]  lg:-mt-16 md:w-[40%]"
       />
@@ -867,20 +681,21 @@
   <section >
     <div class="flex justify-between">
       <img
-        src="/public/check.svg"
+        src="public/check.svg"
         alt="check illustration"
         class="w-1/2 lg:hidden"
       />
       <img
-        src="/public/check-yellow.svg"
+        src="public/check-yellow.svg"
         alt="check illustration"
         class="w-1/2 hidden w-[415px] h-[475px] -ml-7 lg:block"
       />
       <img
-        src="/public/chakra.svg"
+        src="public/chakra.svg"
         alt="chakra illustration"
         class="w-1/4 -mt-44 md:h-[178px] md:w-fit md:-mt-0 lg:h-[314px] lg:mt-10"
       />
+      <div class="circle bg-[#AFA3FF] h-[500px] w-[500px] right-5 blur-2xl bg-opacity-[0.3] hidden" ></div>
     </div>
     <div
       class="-mt-44 text-center p-10 space-y-5 md:-mt-96 md:max-w-[447px] md:mx-auto lg:-mt-[450px] lg:w-[659px] lg:flex lg:flex-col items-center"
@@ -926,10 +741,11 @@
           ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
-
+         
       <div
         class="w-[319px] h-[332px] border border-black rounded-[24px] flex flex-col items-center justify-between p-7 text-center md:h-[373px] md:rounded-[0px_24px_24px_0px] lg:rounded-[0px_0px_0px_24px] lg:w-[370px]"
       >
+      
         <img src="public/i3.svg" alt="impact one title" />
         <p class="font-space-mono text-[23px] font-[700]">Impact one title</p>
         <p class="text-[14px]">
@@ -942,6 +758,8 @@
       <div
         class="w-[319px] h-[332px] border border-black rounded-[24px] flex flex-col items-center justify-between p-7 text-center md:h-[373px] md:rounded-[24px_0px_0px_24px] lg:rounded-[0px_24px_0px_0px] lg:w-[370px]"
       >
+     
+   
         <img src="public/i4.svg" alt="impact one title" />
         <p class="font-space-mono text-[23px] font-[700]">Impact one title</p>
         <p class="text-[14px]">
@@ -973,13 +791,195 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
           ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
+        <div class="circle bg-[#A3FFEE] h-[500px] w-[500px] lg:-left-24 blur-xl bg-opacity-[0.3] md:w-[400px] hidden md:flex " ></div>
       </div>
     </div>
-
-    <div class="flex justify-end -mt-44 md:-mt-52 lg:-mt-60">
+    <div class="circle bg-[#C6A3FF] h-[500px] w-[300px] -left-24 blur-xl bg-opacity-[0.3] " ></div>
+    <div class="flex justify-end -mt-44 md:-mt-52 lg:-mt-96">
       <img src="public/check-stairs.svg" alt="stairs pattern" />
     </div>
+    <div class="circle bg-yellow-300 h-[500px] md:w-[500px] lg:-top-36 -left-24 blur-xl lg:bg-opacity-20  bg-opacity-[0.1] top-96 w-[300px] "></div>
+    
   </section>
+
+  <!-- Our Founder -->
+<section class="bg-[#FECE01] ">
+  <img src="public/founder-scetion-illus1.svg" class="float-left -z-10">
+  <img src="public/founder-saturn.svg" class="-z-10 lg:ml-[40rem] h-44 w-44 lg:ml-[20rem] md:ml-[30rem] block ">
+  <div class="flex lg:flex-row flex-col  lg:space-x-20 lg:p-10 lg:w-[80%] justify-center items-center  md:-mt-24 md:py-0 pb-36  lg:mr-0  md:py-10 w-full">
+      <div>
+      <img src="public/founder-img.svg">
+      </div>
+      <div class="w-[90%] px-10 md:space-y-5 md:mt-2 mx-auto flex flex-col items-center lg:items-start ">
+        <h1 class="font-[900] text-2xl ">Founder Name</h1>
+        <p class=" text-justify text-xl font-[900]">"Raising our consciousness as a society is not a solitary journey, it is a collective effort towards creating a better world for all. Let us join forces and strive towards a brighter future, together "</p>
+        <button
+            class="bg-greenish font-bold w-fit mx-auto lg:mx-0 px-10 py-3 text-xl text-white border border-black rounded shadow-[5px_5px_#000000] lg:px-20"
+          >
+            Meet the Founder
+          </button>
+      </div>
+  </div>
+  <img src="public/founder-section-illus2.svg" class="float-right -mt-[11.1rem] ">
+</section>
+<section class="border border-black bg-faq ">
+  <p class="text-[35px] font-[700] my-10 text-center">FAQ`s</p>
+
+  <!-- faq accordion -->
+  <div
+    class="bg-white relative w-[351px] mx-auto border rounded-t-xl shadow-[7px_7px_#000000] md:mb-16 md:w-[637px] lg:w-[1104px] "
+  >
+    <div>
+      <h2 onclick="openqueries(1)">
+        <button
+          type="button"
+          class="flex  items-center justify-between w-full p-5 font-medium text-left font-[700] rounded-t-xl "
+          id="openquery1">
+          <span class="text-black text-[18px] font-[700] lg:text-[27px] "
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            ut lorem qui lectus
+          </span>
+           <img src="public/down-arrow.svg" id="openbutton1">
+        </button>
+      </h2>
+      <div
+        class="hidden"
+        id="open-body-1"
+      >
+        <div class="p-5">
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            ut lorem qui lectus molestie malesuada vitae vel purus. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <h2 onclick="openqueries(2)">
+        <button
+          type="button"
+          class="flex  items-center justify-between w-full p-5 font-medium text-left font-[700] rounded-t-xl "
+          id="openquery2">
+          <span class="text-black text-[18px] font-[700] lg:text-[27px] "
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            ut lorem qui lectus
+          </span>
+           <img src="public/down-arrow.svg" id="openbutton2">
+        </button>
+      </h2>
+      <div
+        class="hidden"
+        id="open-body-2"
+      >
+        <div class="p-5">
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            ut lorem qui lectus molestie malesuada vitae vel purus. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <h2 onclick="openqueries(3)">
+        <button
+          type="button"
+          class="flex  items-center justify-between w-full p-5 font-medium text-left font-[700] rounded-t-xl "
+          id="openquery3">
+          <span class="text-black text-[18px] font-[700] lg:text-[27px] "
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            ut lorem qui lectus
+          </span>
+           <img src="public/down-arrow.svg" id="openbutton3">
+        </button>
+      </h2>
+      <div
+        class="hidden"
+        id="open-body-3"
+      >
+        <div class="p-5">
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            ut lorem qui lectus molestie malesuada vitae vel purus. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <h2 onclick="openqueries(4)">
+        <button
+          type="button"
+          class="flex  items-center justify-between w-full p-5 font-medium text-left font-[700] rounded-t-xl "
+          id="openquery4">
+          <span class="text-black text-[18px] font-[700] lg:text-[27px] "
+            >Add commonly asked questions here
+          </span>
+           <img src="public/down-arrow.svg" id="openbutton4">
+        </button>
+      </h2>
+      <div
+        class="hidden"
+        id="open-body-4"
+      >
+        <div class="p-5">
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            ut lorem qui lectus molestie malesuada vitae vel purus. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <h2 onclick="openqueries(5)" >
+        <button
+          type="button"
+          class="flex  items-center justify-between w-full p-5 font-medium text-left font-[700] rounded-t-xl "
+          id="openquery5">
+          <span class="text-black text-[18px] font-[700] lg:text-[27px] "
+            >Add commonly asked questions here
+          </span>
+           <img src="public/down-arrow.svg" id="openbutton5">
+        </button>
+      </h2>
+      <div
+        class="hidden"
+        id="open-body-5"
+      >
+        <div class="p-5">
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            ut lorem qui lectus molestie malesuada vitae vel purus. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      
+      
+        
+    </div>
+  </div>
+  <img
+    src="public/zebra-crossing.svg"
+    alt="zebra-crossing"
+    class="-mt-56 w-full md:hidden"
+  />
+  <img
+    src="public/zebra-lg.svg"
+    alt="zebra-crossing"
+    class="w-full -mt-72 hidden lg:block"
+  />
+</section>
+
 <!-- blog and article -->
 
 <section  class="my-16 px-10 h-full py-12 bg-blog ">
@@ -993,7 +993,7 @@
 
     <div class=" p-3 w-[75vw] sm:w-[50vw] md:w-[20rem] lg:w-[22rem] lg:h-3/5 ">
     <div class="flex">
-     <p class="font-extrabold text-4xl">Blocks and articles</p>
+     <p class="font-extrabold text-4xl">Blogs and articles</p>
      <img src="public/Group.svg" alt="" class="ml-12">
     </div>
     <div>
@@ -1379,10 +1379,10 @@
 <section>
      <h1 class="text-center font-extrabold text-5xl">Featured On</h1>
      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eligendi?</p>
-  <div class="container my-10" >
-    <section class="customer-logos slider">
+  <div class="container my-10  mx-auto" >
+    <section class="customer-logos slider ">
       <!-- Card Start -->
-      <div class="slide">
+      <div class="slide ">
         <div
           class="flex gap-[12px] w-[186px] h-[58px] border-2 justify-center items-center shadow-[5px_5px_black] border-gray-800"
         >
@@ -1534,7 +1534,7 @@
   <!-- Next row -->
 
 
-  <div class="container my-10">
+  <div class="container my-10 mx-auto ">
     <section class="customer-logos2 slider ">
       <!-- Card Start -->
       <div class="slide">
@@ -1695,282 +1695,7 @@
 
 
 <!-- faq section -->
-<section class="border border-black bg-faq ">
-  <p class="text-[35px] font-[700] my-10 text-center">FAQ`s</p>
 
-  <!-- faq accordion -->
-  <div
-    class="bg-white relative w-[351px] mx-auto border rounded-t-xl shadow-[7px_7px_#000000] md:mb-16 md:w-[637px] lg:w-[1104px]"
-  >
-    <div id="accordion-collapse" data-accordion="collapse">
-      <h2 id="accordion-collapse-heading-1">
-        <button
-          type="button"
-          class="flex bg-white items-center justify-between w-full p-5 font-medium text-left font-[700] rounded-t-xl"
-          data-accordion-target="#accordion-collapse-body-1"
-          aria-hidden="true"
-          aria-controls="accordion-collapse-body-1"
-          id="openquery1"
-        >
-          <span class="text-black text-[18px] font-[700] lg:text-[27px]"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            ut lorem qui lectus
-          </span>
-          <svg
-            data-accordion-icon
-            class="w-3 h-3 rotate-180 shrink-0"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5 5 1 1 5"
-            />
-          </svg>
-        </button>
-      </h2>
-      <div
-        id="accordion-collapse-body-1"
-        class="hidden"
-        aria-labelledby="accordion-collapse-heading-1"
-      >
-        <div class="p-5">
-          <p class="mb-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            ut lorem qui lectus molestie malesuada vitae vel purus. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <h2 id="accordion-collapse-heading-2">
-        <button
-          type="button"
-          class="flex items-center justify-between w-full p-5 text-left font-[700] border border-b-0 border-gray-200"
-          data-accordion-target="#accordion-collapse-body-2"
-          aria-expanded="false"
-          aria-controls="accordion-collapse-body-2"
-          id="openquery2"
-        >
-          <span class="text-black text-[18px] font-[700] lg:text-[27px]"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            ut lorem qui lectus
-          </span>
-          <svg
-            data-accordion-icon
-            class="w-3 h-3 rotate-180 shrink-0"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5 5 1 1 5"
-            />
-          </svg>
-        </button>
-      </h2>
-      <div
-        id="accordion-collapse-body-2"
-        class="hidden"
-        aria-labelledby="accordion-collapse-heading-2"
-      >
-        <div class="p-5">
-          <p class="mb-2">
-            Flowbite is first conceptualized and designed using the Figma
-            software so everything you see in the library has a design
-            equivalent in our Figma file.
-          </p>
-        </div>
-      </div>
-      <h2 id="accordion-collapse-heading-3">
-        <button
-          type="button"
-          class="flex items-center justify-between w-full p-5 font-[700] text-left"
-          data-accordion-target="#accordion-collapse-body-3"
-          aria-expanded="false"
-          aria-controls="accordion-collapse-body-3"
-          id="openquery3"
-        >
-          <span class="text-black text-[18px] font-[700] lg:text-[27px]"
-            >Add commonly asked questions here</span
-          >
-          <svg
-            data-accordion-icon
-            class="w-3 h-3 rotate-180 shrink-0"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5 5 1 1 5"
-            />
-          </svg>
-        </button>
-      </h2>
-      <div
-        id="accordion-collapse-body-3"
-        class="hidden"
-        aria-labelledby="accordion-collapse-heading-3"
-      >
-        <div
-          class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
-        >
-          <p class="mb-2">
-            The main difference is that the core components from Flowbite
-            are open source under the MIT license, whereas Tailwind UI is a
-            paid product. Another difference is that Flowbite relies on
-            smaller and standalone components, whereas Tailwind UI offers
-            sections of pages.
-          </p>
-        </div>
-      </div>
-
-      <h2 id="accordion-collapse-heading-4">
-        <button
-          type="button"
-          class="flex items-center justify-between w-full p-5 font-[700] text-left"
-          data-accordion-target="#accordion-collapse-body-4"
-          aria-expanded="false"
-          aria-controls="accordion-collapse-body-4"
-          id="openquery4"
-        >
-          <span class="text-black text-[18px] font-[700] lg:text-[27px]"
-            >Add commonly asked questions here</span
-          >
-          <svg
-            data-accordion-icon
-            class="w-3 h-3 rotate-180 shrink-0"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5 5 1 1 5"
-            />
-          </svg>
-        </button>
-      </h2>
-      <div
-        id="accordion-collapse-body-4"
-        class="hidden"
-        aria-labelledby="accordion-collapse-heading-4"
-      >
-        <div
-          class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
-        >
-          <p class="mb-2">
-            The main difference is that the core components from Flowbite
-            are open source under the MIT license, whereas Tailwind UI is a
-            paid product. Another difference is that Flowbite relies on
-            smaller and standalone components, whereas Tailwind UI offers
-            sections of pages.
-          </p>
-        </div>
-      </div>
-
-      <h2 id="accordion-collapse-heading-5">
-        <button
-          type="button"
-          class="flex items-center justify-between w-full p-5 font-[700] text-left"
-          data-accordion-target="#accordion-collapse-body-5"
-          aria-expanded="false"
-          aria-controls="accordion-collapse-body-5"
-          id="openquery5"
-        >
-          <span class="text-black text-[18px] font-[700] lg:text-[27px]"
-            >Add commonly asked questions here</span
-          >
-          <svg
-            data-accordion-icon
-            class="w-3 h-3 rotate-180 shrink-0"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5 5 1 1 5"
-            />
-          </svg>
-        </button>
-      </h2>
-      <div
-        id="accordion-collapse-body-5"
-        class="hidden"
-        aria-labelledby="accordion-collapse-heading-5"
-      >
-        <div
-          class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
-        >
-          <p class="mb-2">
-            The main difference is that the core components from Flowbite
-            are open source under the MIT license, whereas Tailwind UI is a
-            paid product. Another difference is that Flowbite relies on
-            smaller and standalone components, whereas Tailwind UI offers
-            sections of pages.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <img
-    src="public/zebra-crossing.svg"
-    alt="zebra-crossing"
-    class="-mt-56 w-full md:hidden"
-  />
-  <img
-    src="public/zebra-lg.svg"
-    alt="zebra-crossing"
-    class="w-full -mt-72 hidden lg:block"
-  />
-</section>
-
-<!-- Our Founder -->
-<section class="bg-[#FECE01] ">
-  <img src="public/founder-scetion-illus1.svg" class="float-left -z-10">
-  <img src="public/founder-saturn.svg" class="-z-10 lg:ml-[40rem] h-44 w-44 lg:ml-[20rem] md:ml-[30rem] block ">
-  <div class="flex lg:flex-row flex-col  lg:space-x-20 lg:p-10 lg:w-[80%] justify-center items-center  md:-mt-24 md:py-0 pb-36  lg:mr-0  md:py-10 w-full">
-      <div>
-      <img src="public/founder-img.svg">
-      </div>
-      <div class="w-[90%] px-10 md:space-y-5 md:mt-2 mx-auto flex flex-col items-center lg:items-start ">
-        <h1 class="font-[900] text-2xl ">Founder Name</h1>
-        <p class=" text-justify text-xl font-[900]">"Raising our consciousness as a society is not a solitary journey, it is a collective effort towards creating a better world for all. Let us join forces and strive towards a brighter future, together "</p>
-        <button
-            class="bg-greenish font-bold w-fit mx-auto lg:mx-0 px-10 py-3 text-xl text-white border border-black rounded shadow-[5px_5px_#000000] lg:px-20"
-          >
-            Meet the Founder
-          </button>
-      </div>
-  </div>
-  <img src="public/founder-section-illus2.svg" class="float-right -mt-[11.1rem] ">
-</section>
 
 
      <!-- Job Vacancies -->
@@ -2115,7 +1840,7 @@
         </button>
       </div>
       <div>
-        <img src="public/mobile-pic.svg" class="lg:mb-[7rem] mt-10 ">
+        <img src="public/mobile-pic.svg" class="lg:mb-[6rem]  mt-10 md:mt-0 relative">
       </div>
     </section>
 
@@ -2196,140 +1921,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <!-- script -->
-    <script>
-      // mobile menu
-      const burger = document.getElementById("burger");
-      const navlist = document.getElementById("navlist");
-      const closeburger = document.getElementById("closeburger");
-      burger.addEventListener("click", () => {
-        navlist.style.display = "flex";
-        burger.style.display = "none";
-        closeburger.style.display = "block";
-      });
-      closeburger.addEventListener("click", () => {
-        navlist.style.display = "none";
-        closeburger.style.display = "none";
-        burger.style.display = "block";
-      });
-
-
-     var open = false; 
-        document
-        .getElementById("openquery1")
-        .addEventListener("click",function (){
-           if(open == true)
-           {
-            document.getElementById("openquery1").style.backgroundColor =
-            "#fff";
-          document.getElementById(
-            "accordion-collapse-body-1"
-          ).style.backgroundColor = "#fff";
-           open=false
-           }
-           else
-           {
-            document.getElementById("openquery1").style.backgroundColor =
-            "#4bff7e";
-          document.getElementById(
-            "accordion-collapse-body-1"
-          ).style.backgroundColor = "#4bff7e";
-             open=true;
-           }
-        })
-
-
-        document
-        .getElementById("openquery2")
-        .addEventListener("click",function (){
-           if(open == true)
-           {
-            document.getElementById("openquery2").style.backgroundColor =
-            "#fff";
-          document.getElementById(
-            "accordion-collapse-body-2"
-          ).style.backgroundColor = "#fff";
-           open=false
-           }
-           else
-           {
-            document.getElementById("openquery2").style.backgroundColor =
-            "#4bff7e";
-          document.getElementById(
-            "accordion-collapse-body-2"
-          ).style.backgroundColor = "#4bff7e";
-             open=true;
-           }
-        })
-
-        document
-        .getElementById("openquery3")
-        .addEventListener("click",function (){
-           if(open == true)
-           {
-            document.getElementById("openquery3").style.backgroundColor =
-            "#fff";
-          document.getElementById(
-            "accordion-collapse-body-3"
-          ).style.backgroundColor = "#fff";
-           open=false
-           }
-           else
-           {
-            document.getElementById("openquery3").style.backgroundColor =
-            "#4bff7e";
-          document.getElementById(
-            "accordion-collapse-body-3"
-          ).style.backgroundColor = "#4bff7e";
-             open=true;
-           }
-        })
-      
-        $(document).ready(function(){
-  $('.customer-logos').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [{
-      breakpoint: 778,
-      settings: {
-        slidesToShow: 3
-      }
-    }, {
-      breakpoint: 520,
-      settings: {
-        slidesToShow: 1
-      }
-    }]
-  });
-});
-
-$(document).ready(function(){
-  $('.customer-logos2').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1200,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [{
-      breakpoint: 778,
-      settings: {
-        slidesToShow: 2
-      }
-    }, {
-      breakpoint: 520,
-      settings: {
-        slidesToShow: 1
-      }
-    }]
-  });
-});
-      
+    <script src="/script.js">
     </script>
   </body>
 </html>
